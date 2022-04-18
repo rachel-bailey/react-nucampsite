@@ -18,6 +18,7 @@ class Contact extends Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        //allows handleInputChange and handleSubmit to reach the state properties of the parent class, Contact.
     }
 
     handleInputChange(event) {
@@ -34,6 +35,7 @@ class Contact extends Component {
         console.log('Current state is: ' + JSON.stringify(this.state));
         alert('Current state is: ' + JSON.stringify(this.state));
         event.preventDefault();
+        //preventDefault is a function that will stop the page from rerendering when the form is submitted. This would cause it to lose its state value unless linked to a data base.
     }
 
     render() {
