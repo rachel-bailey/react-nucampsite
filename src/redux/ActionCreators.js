@@ -101,7 +101,7 @@ export const postComment = (campsiteId, rating, author, text) => dispatch => {
                     throw error;
                 }
             },
-            error => { throw error: }
+            error => { throw error; }
         )
         .then(response => response.json())
         .then(response => dispatch(addComment(response)))
