@@ -41,7 +41,7 @@ export const fetchComments = () => dispatch => {
 }
 
 export const commentsFailed = errMess => ({
-    type: ActionsTypes.COMMENTS_FAILED,
+    type: ActionTypes.COMMENTS_FAILED,
     payload: errMess
 });
 
